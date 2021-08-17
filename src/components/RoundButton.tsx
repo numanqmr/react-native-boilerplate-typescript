@@ -3,14 +3,17 @@ import {
     Image,
     ImageSourcePropType,
     StyleProp,
-    StyleSheet, Text, TextStyle, TouchableOpacity,
+    StyleSheet,
+    Text,
+    TextStyle,
+    TouchableOpacity,
     View,
-    ViewStyle
+    ViewStyle,
 } from 'react-native';
 import { RFPercentage as RF } from 'react-native-responsive-fontsize';
 import {
     heightPercentageToDP as hp,
-    widthPercentageToDP as wp
+    widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
 import { PRIMARY, SECONDARY, WHITE } from '../styles/colors';
 import ShouldRender from '../utils/ShouldRender';
@@ -76,33 +79,35 @@ const RoundButton: FC<RoundButtonProps> = ({
 
     return (
         <TouchableOpacity style={buttonContainerStyle} disabled={disabled} onPress={onPress}>
-                <View
-                    style={[
-                        roundButtonStyle,
-                        {
-                            backgroundColor: disabled ? SECONDARY : backgroundColor,
-                            opacity,
-                            borderRadius: borderRadius ?? hp(1.4),
-                        },
-                        buttonStyle,
-                    ]}>
-                    {/* Button Left Image */}
-                    <ShouldRender if={imgSrc}>
-                        <Image
-                            style={buttonImage}
-                            resizeMode="contain"
-                            source={imgSrc as ImageSourcePropType}
-                        />
-                    </ShouldRender>
+            <View
+                style={[
+                    roundButtonStyle,
+                    {
+                        backgroundColor: disabled ? SECONDARY : backgroundColor,
+                        opacity,
+                        borderRadius: borderRadius ?? hp(1.4),
+                    },
+                    buttonStyle,
+                ]}>
+                {/* Button Left Image */}
+                <ShouldRender if={imgSrc}>
+                    <Image
+                        style={buttonImage}
+                        resizeMode="contain"
+                        source={imgSrc as ImageSourcePropType}
+                    />
+                </ShouldRender>
 
-                    {/* Button Text */}
-                    <ShouldRender if={title}>
-                        <Text fontWeight={'bold'} style={[buttonTitle, { color }, !imgSrc && noImage, textStyle]}>
-                            {' '}
-                            {title}{' '}
-                        </Text>
-                    </ShouldRender>
-                </View>
+                {/* Button Text */}
+                <ShouldRender if={title}>
+                    <Text
+                        fontWeight={'bold'}
+                        style={[buttonTitle, { color }, !imgSrc && noImage, textStyle]}>
+                        {' '}
+                        {title}{' '}
+                    </Text>
+                </ShouldRender>
+            </View>
         </TouchableOpacity>
     );
 };

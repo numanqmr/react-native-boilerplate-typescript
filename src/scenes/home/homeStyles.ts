@@ -8,10 +8,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    title:{
+    title: {
         color: PRIMARY,
-        fontSize: RFPercentage(3)
-    }
+        fontSize: RFPercentage(3),
+    },
 });
 
 export default styles;

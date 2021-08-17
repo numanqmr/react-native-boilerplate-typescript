@@ -1,9 +1,4 @@
-import {
-    initialState,
-    TasksActionKeys,
-    TasksActionTypes,
-    UserStateProps
-} from './actionTypes';
+import { initialState, TasksActionKeys, TasksActionTypes, UserStateProps } from './actionTypes';
 
 export default function TasksReducer(
     state: UserStateProps = initialState,

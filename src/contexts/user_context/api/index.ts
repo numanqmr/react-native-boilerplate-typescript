@@ -5,7 +5,7 @@ import UserDataParser from './parser';
 // create token for agora video call
 export const loginUser = () =>
     new Promise((resolve, reject) => {
-        const reqBody = {};//dummy user request body
+        const reqBody = {}; //dummy user request body
         axios
             .post(`${DEVELOPMENT_BASE_URL}`, reqBody)
             .then((response) => {

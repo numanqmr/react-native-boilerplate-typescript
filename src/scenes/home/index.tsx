@@ -13,15 +13,8 @@ interface HomeProps {
     userState: UserStateProps;
 }
 
-const Home: FC<HomeProps> = ({
-    navigation,
-    userState,
-}: HomeProps): JSX.Element => {
-    
-    const {
-        container,
-        title,
-    } = styles;
+const Home: FC<HomeProps> = ({ navigation, userState }: HomeProps): JSX.Element => {
+    const { container, title } = styles;
 
     const [mounted, setMounted] = useState<boolean>(false);
     const { user } = userState;
@@ -37,10 +30,10 @@ const Home: FC<HomeProps> = ({
 
     return (
         <View style={container}>
-            <NotchHelper/>
+            <NotchHelper />
             <ShouldRender if={mounted}>
                 {/* hehehe */}
-                <Text style={title} >{APP_STRINGS.HOME_SCREEN_TITLE}</Text>
+                <Text style={title}>{APP_STRINGS.HOME_SCREEN_TITLE}</Text>
             </ShouldRender>
         </View>
     );

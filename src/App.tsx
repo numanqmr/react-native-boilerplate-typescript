@@ -6,7 +6,7 @@ import Routes from './navigation/Routes';
 const App = () => (
     <NavigationContainer>
         <UserContextProvider>
-                <Routes />
+            <Routes />
         </UserContextProvider>
     </NavigationContainer>
 );
