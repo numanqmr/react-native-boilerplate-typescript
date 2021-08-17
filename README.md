@@ -5,7 +5,7 @@ Simple React-Native boilerplate code in Typescript for getting started with a ne
 ## Description
 
 The boilerpate code is added in order to assist a new project without having to worry about project architecture. 
-It has react-navigation, context implementation with reducer, async storage, and axios integrated with basic navigation and sample API call and basic project structure to follow. 
+It has react-navigation, context implementation with reducer, async storage, axios integrated with sample API call and basic project structure to follow. 
 
 ## Getting Started
 
