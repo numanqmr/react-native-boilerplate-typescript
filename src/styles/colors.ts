@@ -1,5 +1,5 @@
 // App colors
-export const PRIMARY = '#9E72B2';
+export const PRIMARY = '#3F225F';
 export const SECONDARY = '#172B4D';
 export const WHITE = '#FFFFFF';
 export const BLACK = '#000000';
