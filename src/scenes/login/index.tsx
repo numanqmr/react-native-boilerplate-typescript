@@ -33,6 +33,12 @@ const Login: FC<LoginProps> = ({ userActions, userState }: LoginProps): JSX.Elem
                 <ActivityIndicator animating size="large" color={WHITE} />
             </ShouldRender>
             <Text style={textStyle}>{APP_STRINGS.LOGIN_SCREEN_TITLE}</Text>
+            {/* Header section */}
+
+
+            {/* body section section */}
+
+            
 
             {/* Button section */}
             <View style={loginButton}>
@@ -41,11 +47,15 @@ const Login: FC<LoginProps> = ({ userActions, userState }: LoginProps): JSX.Elem
                     color={WHITE}
                     backgroundColor={PRIMARY}
                     borderRadius={50}
-                    onPress={() => navigation.navigate(APP_ROUTES.HOME_SCREEN)}
+                    onPress={() => {
+                        //TODO: replace with api call.
+                        navigation.replace(APP_ROUTES.HOME_SCREEN)
+                    }}
                     textStyle={{ fontSize: RFPercentage(2.6), fontWeight: 'bold' }}
                     buttonStyle={{}}
                 />
             </View>
+            {/* footer section */}
         </View>
     );
 };
