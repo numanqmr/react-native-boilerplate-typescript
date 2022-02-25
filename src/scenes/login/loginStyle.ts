@@ -22,18 +22,6 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         width: widthPercentageToDP('55%'),
     },
-    header:{
-        
-    },
-    inputContainer: {
-        alignSelf: 'center',
-    },
-    input: {
-        
-    },
-    footer:{
-
-    },
 });
 
 export default styles;
