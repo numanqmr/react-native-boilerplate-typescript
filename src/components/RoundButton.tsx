@@ -18,7 +18,6 @@ import {
 import { PRIMARY, SECONDARY, WHITE } from '../styles/colors';
 import ShouldRender from '../utils/ShouldRender';
 
-
 const styles = StyleSheet.create({
     roundButtonStyle: {
         backgroundColor: PRIMARY,
